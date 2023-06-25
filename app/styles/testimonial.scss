@@ -1,0 +1,59 @@
+.testimonial {
+  .testimonial_main {
+    @apply w-[90%] mx-auto my-[4rem];
+  }
+  .test_title {
+    @apply tracking-[0.1rem] text-[1.2rem] sm:text-[3rem] 2xl:text-[4rem] font-bold text-center mb-[4rem];
+  }
+  .all_testimony {
+    // background-color: coral;
+    overflow: hidden;
+    position: relative;
+    .buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99;
+      font-weight: bold;
+      font-size: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .testimonies {
+    overflow: hidden;
+    display: flex;
+    width: 300%;
+    .testimony {
+      // background-color: skyblue;
+      width: 100%;
+      padding: 1rem 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      img {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

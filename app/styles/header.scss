@@ -1,0 +1,72 @@
+.header {
+  // background-color: skyblue;
+
+  .header_main {
+    // background-color: coral;
+    @apply w-[90%] m-auto flex flex-col flex-col-reverse md:flex-row items-center justify-between py-8;
+
+    .info {
+      // background-color: skyblue;
+      flex: 1;
+      width: 100%;
+      @apply pt-8;
+      .name_container {
+        overflow: hidden;
+      }
+      .name {
+        @apply animate-moveUp  opacity-0 text-[1.8rem]  400p:text-[2.5rem] sm:text-[4rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4rem] font-bold tracking-[.2rem] lg:tracking-[0.4rem] pb-0;
+        word-spacing: 0.5rem;
+        animation-delay: 0.2s;
+      }
+      .skill_container {
+        // background-color: coral;
+        overflow: hidden;
+        @apply mb-[4rem] lg:mb-[8rem] xl:mb-[11rem] 2xl:mb-[15rem];
+        .skill {
+          overflow: hidden;
+          @apply animate-moveUp opacity-0 font-bold text-[1.5rem] 400p:text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[2.5rem]  lg:tracking-[0.2rem];
+          word-spacing: 0.3rem;
+          animation-delay: 0.3s;
+        }
+      }
+      .exp_container {
+        overflow: hidden;
+        .exp {
+          @apply animate-moveUp opacity-0 tracking-[0.1rem] text-[1.2rem] sm:text-[1.5rem] md:text-[1.5rem] xl:text-[2rem] font-bold;
+          word-spacing: 0.2rem;
+          animation-delay: 0.5s;
+        }
+      }
+      .email_container {
+        overflow: hidden;
+        .email {
+          @apply animate-moveUp opacity-0 font-bold  flex items-center gap-4 mt-2;
+          animation-delay: 0.6s;
+
+          .email_icon {
+            @apply fill-[blue] text-[1.5rem] sm:text-[2rem];
+          }
+          h1 {
+            @apply text-blue-400 lg:tracking-[.15rem] text-[.8rem] sm:text-[1.5rem] md:text-[1rem] xl:text-[1.5rem];
+          }
+        }
+      }
+    }
+    .portrait_image {
+      flex: 1;
+      // background-color: lightgreen;
+      overflow: hidden;
+      img {
+        opacity: 0;
+        animation: moveImgUp 3s ease forwards 1;
+        animation-delay: 1s;
+      }
+    }
+  }
+}
+
+@keyframes moveImgUp {
+  to {
+    opacity: 1;
+  }
+}

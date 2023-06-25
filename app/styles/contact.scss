@@ -1,0 +1,31 @@
+.contact {
+  // background-color: coral;
+  .contact_main {
+    @apply w-[90%] mb-[2rem] mx-auto;
+    .contact_title {
+      word-spacing: 1.5rem;
+      @apply tracking-[0.1rem] text-[1.2rem] sm:text-[3rem] 2xl:text-[4rem] font-bold mb-[2rem];
+    }
+    .email,
+    .phone {
+      @apply opacity-0 flex items-center justify-start gap-6 text-[.9rem] sm:text-[1.5rem] 2xl:text-[2rem] sm:tracking-[0.1rem] font-bold mb-[2rem];
+
+      svg {
+        @apply text-[1.5rem];
+      }
+    }
+  }
+}
+
+.contact_anime {
+  animation: contactMoveUp 1s ease forwards 1;
+}
+
+@keyframes contactMoveUp {
+  from {
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}

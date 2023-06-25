@@ -1,0 +1,64 @@
+.skillComp {
+  // background-color: lightgray;
+
+  .skill_title {
+    @apply tracking-[0.1rem] text-[1.2rem] sm:text-[3rem] 2xl:text-[4rem] font-bold text-center my-[2rem];
+    // background-color: coral;
+  }
+  .skills {
+    @apply grid gap-[1.5rem] grid-cols-[repeat(auto-fit,minmax(6rem,1fr))] text-8xl w-[90%] mx-auto mb-[5rem];
+
+    .html,
+    .css,
+    .tailwind,
+    .js,
+    .react,
+    .solid,
+    .next {
+      @apply bg-[rgb(10,10,10)] shadow-[0.1rem_0.2rem_0.2rem_wheat] p-4 rounded-md;
+    }
+    .html {
+      fill: red;
+      opacity: 0;
+    }
+    .css {
+      fill: blue;
+      opacity: 0;
+    }
+    .tailwind {
+      fill: skyblue;
+      opacity: 0;
+      animation-delay: 1.5s;
+    }
+    .js {
+      fill: yellow;
+      opacity: 0;
+      animation-delay: 2s;
+    }
+    .react {
+      fill: skyblue;
+      opacity: 0;
+      animation-delay: 2.5s;
+    }
+    .solid {
+      opacity: 0;
+      animation-delay: 3s;
+    }
+    .next {
+      opacity: 0;
+      animation-delay: 3.5s;
+    }
+  }
+}
+.add_skill_animation {
+  animation: moveSkills 0.3s ease forwards 1;
+}
+
+@keyframes moveSkills {
+  from {
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}

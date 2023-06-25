@@ -1,0 +1,44 @@
+.top_projects {
+  .top_projects_main {
+    @apply w-[90%] mx-auto my-[4rem];
+    .top_title {
+      @apply text-[1.2rem] sm:text-[3rem] 2xl:text-[4rem] text-center font-bold mb-[3rem] tracking-[0.2rem];
+    }
+    .projects {
+      @apply grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] gap-16;
+      .project {
+        @apply opacity-0 relative hover:opacity-80 hover:scale-[1.01] hover:-translate-y-2 transition-all duration-300;
+      }
+      .project_link {
+        @apply absolute z-10 rounded-[50%] -top-5 -right-5 p-1 text-[2rem]  border-8 border-black  hover:cursor-pointer;
+        svg {
+          @apply 2xl:text-[3rem];
+        }
+      }
+      .project_main {
+        @apply relative text-center rounded-[1rem] overflow-hidden shadow-[0.05rem_0.05rem_0.5rem_rgba(245,222,179,0.8)] hover:shadow-[0.1rem_0.1rem_0.5rem_rgb(245,222,179)];
+
+        .project_title {
+          @apply text-[1rem] sm:text-[1.5rem] 2xl:text-[2rem] font-bold py-4;
+        }
+
+        img {
+          @apply object-cover w-[100%];
+        }
+      }
+    }
+  }
+}
+
+.project_anime {
+  animation: projectMoveUp 1s ease forwards 1;
+}
+
+@keyframes projectMoveUp {
+  from {
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}

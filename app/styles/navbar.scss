@@ -1,0 +1,26 @@
+.navbar {
+  @apply border-blue-500  border-b-2 relative;
+  .nav {
+    @apply w-[90%] m-auto py-2;
+    .nav_title {
+      overflow: hidden;
+    }
+    h1 {
+      flex: 1;
+      letter-spacing: 0.4rem;
+      @apply animate-moveUp opacity-0 text-[3rem] sm:text-[4.5rem] font-bold;
+    }
+    // ul {
+    //   flex: 2;
+    //   @apply flex justify-end sm:justify-around;
+    //   .nav_home,
+    //   .projects,
+    //   .contacts {
+    //     @apply hidden  sm:flex sm:text-xl font-bold;
+    //   }
+    //   .burger {
+    //     @apply text-4xl sm:hidden transition ease-in-out duration-500;
+    //   }
+    // }
+  }
+}

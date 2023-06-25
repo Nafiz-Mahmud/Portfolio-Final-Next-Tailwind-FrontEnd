@@ -1,0 +1,43 @@
+.button_social {
+  .button_social_main {
+    @apply w-[90%] flex flex-col gap-[5rem] m-auto pt-4;
+    // background-color: coral;
+  }
+  .cfa_button {
+    @apply shadow-[0.2rem_0.2rem_0.5rem_blue] border-[0.1rem] border-solid border-[rgb(0,0,158)];
+    @apply animate-scale bg-transparent text-2xl 2xl:text-[3rem] px-[1rem] py-[.5rem] 2xl:px-[2.5rem] 2xl:py-[2rem] block w-fit rounded-full hover:animate-none hover:scale-105;
+  }
+  .social {
+    @apply text-[2.5rem] 400p:text-[3rem] 500p:text-[3.5rem] lg:text-[5rem] gap-[1.2rem] 400p:gap-[1.8rem] 500p:gap-[2.2rem] lg:gap-[3rem] flex items-center  2xl:gap-[10rem] 2xl:pr-[6rem];
+    // background-color: skyblue;
+    .upwork,
+    .linkedin,
+    .twitter,
+    .github {
+      opacity: 0;
+    }
+    svg {
+      transition: all 0.2s ease;
+      @apply opacity-70 transition-all duration-200 ease-[ease] hover:opacity-100 hover:cursor-pointer;
+
+      &:hover {
+        fill: gold;
+        cursor: pointer;
+        scale: 1.05;
+      }
+    }
+  }
+}
+
+.social_anime {
+  animation: socialMoveUp 1s ease forwards 1;
+}
+
+@keyframes socialMoveUp {
+  from {
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
