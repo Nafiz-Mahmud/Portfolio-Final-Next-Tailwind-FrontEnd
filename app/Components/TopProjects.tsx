@@ -25,9 +25,9 @@ export default function TopProjects() {
     },
     {
       id: 3,
-      title: "Manreka Accounting",
-      image: site_img,
-      link: "https://manreka-accounting-solid-tailwind-frontend.vercel.app/",
+      title: "WellHall",
+      image: site_one,
+      link: "https://wellhall-resort-next-tailwind.vercel.app",
     },
   ];
   return (
